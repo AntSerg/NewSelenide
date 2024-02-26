@@ -23,6 +23,5 @@ jobs:
         # обязательно должен быть для запуска SUT в CI
         run: java -jar ./artifacts/app-card-delivery.jar &
       - name: Build with Gradle
-        -Dselenide: headless=true
+
         run: ./gradlew test --info
-        
